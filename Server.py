@@ -1,10 +1,12 @@
-class Server:
-    """ Server class for representing and manipulating servers. """
+import server
 
-    def __init__(self, server_ip):
-        # TODO -
-        self.server_ip = server_ip
+def print_program_info():
+    print("Server Automator v0.1 by Tariq")
 
-    def ping(self):
-        # TODO - Use os module to ping the server
-        return
+#This is the entry point
+if __name__ == ' __main__':
+    print_program_info()
+
+    server = Server.Server("35.155.213.121")
+
+    print(server.print())
